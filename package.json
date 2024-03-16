@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:prod": "npm run build&& node dist/index.js",
+    "build": "tsc",
+    "prepare": "husky"
+  },
   "devDependencies": {
     "@types/node": "^20.11.28",
     "husky": "^9.0.11",
