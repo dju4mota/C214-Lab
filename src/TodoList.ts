@@ -7,7 +7,7 @@
 
 export type Task = {
     title: string,
-    descrition: string,
+    description: string,
     targetDate: string,
     type?: string,
     priority?: string,
@@ -21,4 +21,8 @@ export class ToDoList{
     add(task: Task){
         this.tasks.push(task)
     }
+    getTasks(){
+        return this.tasks;
+    }
+
 }
