@@ -6,7 +6,6 @@
     "prepare": "husky",
     "test:unit": "jest",
     "test:unit:report": "jest --collect-coverage"
-
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
