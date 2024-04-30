@@ -1,7 +1,7 @@
 import { Task, UpdateTask } from "../models/Task";
-import { ToDoListRepositoryInterface } from "./ToDoListRepositoryInterface";
+import { TodoListRepository } from "./TodoListRepository";
 
-export class LocalStorageAdapter implements ToDoListRepositoryInterface {
+export class LocalStorageAdapter implements TodoListRepository {
     create(task: Task) {
         try {
             const tasks: Task[] = JSON.parse(localStorage.getItem('tasks') || '[]')
